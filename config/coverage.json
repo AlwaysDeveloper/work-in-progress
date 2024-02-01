@@ -1,0 +1,26 @@
+{
+    "postgres": {
+        "username": "POSTFRES_USERNAME",
+        "password": "POSTFRES_PASSWORD",
+        "database": "POSTFRES_DATABASE",
+        "host": "127.0.0.1",
+        "port": 5433,
+        "dialect": "postgres"
+    },
+    "jwt": {
+        "secret": "JWT_SECRECT",
+        "expire": "90d"
+    },
+    "aws": {
+        "access_key_id": "ACCESS_KEY_ID",
+        "secret_access_key": "SECRET_ACCESS_KEY",
+        "regin": "AWS_REGIN",
+        "s3": {
+            "bucket": "AWS_BUCKET",
+            "expiration": 3600
+        }
+    },
+    "passwordManager": {
+        "salt": 12
+    }
+}
