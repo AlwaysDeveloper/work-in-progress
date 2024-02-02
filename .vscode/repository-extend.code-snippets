@@ -18,7 +18,7 @@
 	"Repository class Extension": {
 		"prefix": "Repository",
 		"body": [
-			"import Repository from \"@models\";"
+			"import Repository from \"@models\";",
 			"",
 			"export default class ${1:Model}Repository extends Repository{",
 			"  constructor() {",

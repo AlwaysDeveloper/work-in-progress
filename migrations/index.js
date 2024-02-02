@@ -37,6 +37,7 @@ export default async function migrations () {
             process.exit(0);
         }
     } 
+    process.exit(1);
 }
 
 
