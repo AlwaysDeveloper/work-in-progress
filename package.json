@@ -10,7 +10,7 @@
     "start:dev": "npm i && NODE_ENV=local CONFIG=./config/dev.json nodemon --exec babel-node index.js --extensions \".js,.jsx,.ts,.tsx\"",
     "migrate:dev": "CONFIG=./config/dev.json npx babel-node ./migrations/index.js",
     "migrate:test": "CONFIG=./config/test.json npx babel-node ./migrations/index.js",
-    "repository:generate": "npx babel-node ./lib/commands/repository.js"
+    "repository:g": "npx babel-node ./lib/commands/repository.js"
   },
   "repository": {
     "type": "git",
