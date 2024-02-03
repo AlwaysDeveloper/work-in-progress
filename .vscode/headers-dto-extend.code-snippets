@@ -18,8 +18,8 @@
 	"Create DTO from source headers with Validation": {
 		"prefix": "headersDto",
 		"body": [
-		  "import rule from \"@validation/rule\";",
-		  "import { HeadersDto } from \"@utils/DTO\";",
+		  "import rule from \"validation/rule\";",
+		  "import { HeadersDto } from \"utils/DTO\";",
 		  "",
 		  "export default class ${1:DTO} extends HeadersDto {",
 		  "  constructor(source) {",

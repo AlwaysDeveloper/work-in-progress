@@ -1,8 +1,8 @@
-import Router from "@router";
+import Router from "router";
 import Express from "express";
 import cors from "cors";
 import { json, urlencoded } from "body-parser";
-import ErrorHandler from "@middleware/errorhandler";
+import ErrorHandler from "middleware/errorhandler";
 
 const middlewares = [
 	cors(),

@@ -7,23 +7,21 @@
         [
             "module-resolver",
             {
-                "root": [
-                    "."
-                ],
+                "root": ["./"],
                 "alias": {
-                    "@utils": "./utils",
-                    "@errors": "./utils/errors",
-                    "@validation": "./utils/validations",
-                    "@router": "./lib/router",
-                    "@resource": "./resource",
-                    "@models": "./models",
-                    "@middleware": "./middleware",
-                    "@aws": "./aws",
-                    "@config": "./config",
-                    "@constants": "./constants",
-                    "@repositories": "./repositories",
-                    "@common": "./common",
-                    "@test": "./test"
+                    "utils": "./utils",
+                    "errors": "./utils/errors",
+                    "validation": "./utils/validations",
+                    "router": "./lib/router",
+                    "resource": "./resource",
+                    "models": "./models",
+                    "middleware": "./middleware",
+                    "aws": "./aws",
+                    "config": "./config",
+                    "constants": "./constants",
+                    "repositories": "./repositories",
+                    "common": "./common",
+                    "test": "./test"
                 }
             }
         ]

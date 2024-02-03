@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-require("@config");
-const { default: Router } = require("@router");
-const { default: MockApp } = require("@test/tools/mockapp");
-const { default: TestRouter } = require("@test/tools/testrouter");
+require("config");
+const { default: Router } = require("router");
+const { default: MockApp } = require("test/tools/mockapp");
+const { default: TestRouter } = require("test/tools/testrouter");
 
 TestRouter(
 	Router(
