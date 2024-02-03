@@ -1,4 +1,4 @@
-import ValidationError from "@errors/validationerror";
+import ValidationError from "errors/validationerror";
 
 function executeRules(rules, value) {
 	for (let rule of rules) {

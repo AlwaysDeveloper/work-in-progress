@@ -1,4 +1,4 @@
-import("@config")
+import("config")
 	.then(async () => {
 		const http = await import("http");
 		const app = await import("./app");

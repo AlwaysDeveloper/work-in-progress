@@ -1,5 +1,5 @@
-import ApiError from "@errors/apierror";
-import validate from "@validation/validate";
+import ApiError from "errors/apierror";
+import validate from "validation/validate";
 export default class Dto {
 	#source;
 	#rules;

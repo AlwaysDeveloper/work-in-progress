@@ -18,8 +18,8 @@
 	"Create DTO from source query with Validation": {
 		"prefix": "queryDto",
 		"body": [
-		  "import rule from \"@validation/rule\";",
-		  "import { QueryDto } from \"@utils/DTO\";",
+		  "import rule from \"validation/rule\";",
+		  "import { QueryDto } from \"utils/DTO\";",
 		  "",
 		  "export default class ${1:MyDto} extends QueryDto {",
 		  "  constructor(source) {",

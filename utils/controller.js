@@ -1,5 +1,5 @@
 import { DeleteRoute, GetRoute, PostRoute, PutRoute } from "../lib/router";
-import constants from "@constants/controller";
+import constants from "constants/controller";
 import Injectable from "./Injectable";
 
 export default class Controller extends Injectable {

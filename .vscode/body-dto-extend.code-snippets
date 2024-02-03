@@ -18,8 +18,8 @@
 	"Create DTO from source body with Validation": {
 		"prefix": "bodyDto",
 		"body": [
-		  "import rule from \"@validation/rule\";",
-		  "import { BodyDto } from \"@utils/DTO\";",
+		  "import rule from \"validation/rule\";",
+		  "import { BodyDto } from \"utils/DTO\";",
 		  "",
 		  "export default class ${1:MyDto} extends BodyDto {",
 		  "  constructor(source) {",
