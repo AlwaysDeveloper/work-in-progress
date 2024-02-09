@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "npm i && echo \"Info: Unit testing starting..\" && NODE_ENV=test CONFIG=./config/test.json mocha --config ./.mocharc.js --watch --allow-uncaught --require @babel/register",
+    "test": "npm i && echo \"Info: Unit testing starting..\" && NODE_ENV=test CONFIG=./config/test.json mocha --config ./.mocharc.js --allow-uncaught --require @babel/register",
     "coverage": "npm i && echo \"Info: Unit testing starting..\" && NODE_ENV=test CONFIG=./config/coverage.json nyc --config=./test/.nycrc mocha --config ./.mocharc.js --allow-uncaught --require @babel/register",
     "start:dev": "npm i && NODE_ENV=local CONFIG=./config/dev.json nodemon --exec babel-node index.js --extensions \".js,.jsx,.ts,.tsx\"",
     "migrate:dev": "CONFIG=./config/dev.json npx babel-node ./migrations/index.js",

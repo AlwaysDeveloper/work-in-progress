@@ -2,10 +2,6 @@
 "use strict";
 
 import { Model } from "sequelize";
-import { v4 } from "uuid";
-import crypto from "crypto";
-import { UserRoles, UserStatus } from "../constants/enums";
-import PasswordManager from "../common/PasswordManager";
 
 module.exports = (sequelize, DataTypes) => {
 	class User extends Model {
@@ -67,16 +63,16 @@ module.exports = (sequelize, DataTypes) => {
 			unique: true
 		},
 		userRole: {
-			type: DataTypes.ENUM(Object.values(UserRoles)),
+			type: DataTypes.ENUM(["USER", "ADMIN"]),
 			field: "user_role",
 			allowNull: false,
-			defaultValue: UserRoles.user
+			defaultValue: "USER"
 		},
 		isActive: {
-			type: DataTypes.ENUM(Object.values(UserStatus)),
+			type: DataTypes.ENUM(["ACTIVE"]),
 			field: "is_active",
 			allowNull: false,
-			defaultValue: UserStatus.active
+			defaultValue: "ACTIVE"
 		},
 		createdAt: {
 			allowNull: false,
@@ -92,22 +88,6 @@ module.exports = (sequelize, DataTypes) => {
 		sequelize,
 		modelName: "User",
 		tableName: "users",
-		hooks: {
-			beforeValidate: async (user) => {
-				if(!user.exId){
-					user.exId = v4();
-				}
-				if(!user.password) {
-					user.password = await new PasswordManager().hash(user.password ? user.password : crypto.randomBytes(32).toString("hex"));
-				}
-			},
-			beforeCreate: async (user) => {
-				user.password = await new PasswordManager().hash(user.password ? user.password : crypto.randomBytes(32).toString("hex"));
-				if (!user.username) {
-					user.username = `${user.email.split("@")[0]}@${user.msnid.split(user.msnid.length - 1)}`;
-				}
-			}
-		}
 	});
 	return User;
 };

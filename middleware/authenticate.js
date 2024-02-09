@@ -1,5 +1,5 @@
 import { JWTVerify } from "../common/JWT";
-import AuthenticationError from "../utils/errors/authenticationerror";
+import AuthenticationError from "errors/authenticationerror";
 
 function extractToken(token) {
 	if (!token || !token.startsWith("Bearer")) {

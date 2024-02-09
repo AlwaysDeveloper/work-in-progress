@@ -1,5 +1,5 @@
 import JsonWebToken from "jsonwebtoken";
-import AuthenticationError from "../utils/errors/authenticationerror";
+import AuthenticationError from "errors/authenticationerror";
 
 export function JWTSign(payload) {
 	return JsonWebToken.sign(
