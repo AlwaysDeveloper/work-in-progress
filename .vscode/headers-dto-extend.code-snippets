@@ -19,7 +19,7 @@
 		"prefix": "headersDto",
 		"body": [
 		  "import rule from \"validation/rule\";",
-		  "import { HeadersDto } from \"utils/DTO\";",
+		  "import { HeadersDto } from \"DTO\";",
 		  "",
 		  "export default class ${1:DTO} extends HeadersDto {",
 		  "  constructor(source) {",

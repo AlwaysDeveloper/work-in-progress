@@ -19,7 +19,7 @@
 		"prefix": "bodyDto",
 		"body": [
 		  "import rule from \"validation/rule\";",
-		  "import { BodyDto } from \"utils/DTO\";",
+		  "import { BodyDto } from \"DTO\";",
 		  "",
 		  "export default class ${1:MyDto} extends BodyDto {",
 		  "  constructor(source) {",

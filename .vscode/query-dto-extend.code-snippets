@@ -19,7 +19,7 @@
 		"prefix": "queryDto",
 		"body": [
 		  "import rule from \"validation/rule\";",
-		  "import { QueryDto } from \"utils/DTO\";",
+		  "import { QueryDto } from \"DTO\";",
 		  "",
 		  "export default class ${1:MyDto} extends QueryDto {",
 		  "  constructor(source) {",

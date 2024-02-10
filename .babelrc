@@ -20,7 +20,10 @@
                     "constants": "./constants",
                     "repositories": "./repositories",
                     "common": "./common",
-                    "test": "./test"
+                    "test": "./test",
+                    "Controller": "./lib/Controller.js",
+                    "Injectable": "./lib/Injectable.js",
+                    "DTO": "./lib/DTO.js"
                 }
             }
         ]

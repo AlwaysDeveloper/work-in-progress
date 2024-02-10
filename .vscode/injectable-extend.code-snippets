@@ -18,7 +18,7 @@
 	"Injectable class Extension": {
 		"prefix": "Injectable",
 		"body": [
-			"import Injectable from \"utils/Injectable\";"
+			"import Injectable from \"Injectable\";"
 			"",
 			"export default class ${1:MyClass} extends Injectable{",
 			"  constructor(...args) {",

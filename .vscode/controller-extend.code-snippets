@@ -18,7 +18,7 @@
 	"Controller class Extension": {
 		"prefix": "Controller",
 		"body": [
-			"import Controller from \"utils/controller\";"
+			"import Controller from \"Controller\";"
 			"",
 			"export default class ${1:MyController} extends Controller{",
 			"  constructor() {",

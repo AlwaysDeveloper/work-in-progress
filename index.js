@@ -1,9 +1,13 @@
-import("config")
-	.then(async () => {
-		const http = await import("http");
-		const app = await import("./app");
+import { App } from "./lib/Application";
 
-		const server = http.createServer(app);
-		server.listen(APP_CONFIG.port, () => console.log(`app is listening on: http://localhost:${APP_CONFIG.port}`));
-	})
-	.catch();
+
+async function bootstrap () {
+	await import("config");
+	// new Application({ load: ["api.js", "controller.js"] }).listen(APP_CONFIG.port);
+	new App(APP_CONFIG.port)
+		.load(["controller.js"])
+		.build()
+		.listen();
+}
+
+bootstrap();

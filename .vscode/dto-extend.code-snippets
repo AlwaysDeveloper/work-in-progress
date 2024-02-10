@@ -19,7 +19,7 @@
 		"prefix": "createdto",
 		"body": [
 		  "import rule from \"validation/rule\";",
-		  "import Dto from \"utils/DTO\";",
+		  "import Dto from \"DTO\";",
 		  "",
 		  "export default class ${1:MyDto} extends Dto {",
 		  "  constructor(source) {",
