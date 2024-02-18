@@ -1,6 +1,6 @@
-import enums from "../constants/enums";
-import UserRepository from "../repositories/UserRepository";
-import AuthenticationError from "../utils/errors/authenticationerror";
+import UserRepository from "repositories/UserRepository";
+import AuthenticationError from "errors/authenticationerror";
+import { UserStatus } from "../constants/User.constant";
 
 /**
  * 
@@ -19,7 +19,7 @@ export default function Authorization(UserRole) {
 				arrtibutes: ["exId"],
 				where: { 
 					exId: req.user.id,
-					isActive: enums.userStatus.active,
+					isActive: UserStatus.ACTIVE,
 					userRole: UserRole
 				} 
 			});

@@ -1,4 +1,4 @@
-import { JWTVerify } from "../common/JWT";
+import { JWTVerify } from "common/JWT";
 import AuthenticationError from "errors/authenticationerror";
 
 function extractToken(token) {
