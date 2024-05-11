@@ -43,5 +43,5 @@ module.exports = {
 	"globals": {
 		"APP_CONFIG": "readonly"
 	},
-	"ignorePatterns": ["node_modules/", "migrations/"]
+	"ignorePatterns": ["node_modules/", "migrations/", "models/"]
 };

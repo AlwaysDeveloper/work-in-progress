@@ -1,3 +1,4 @@
+import '../config';
 import FileSystem from 'fs';
 import path from 'path';
 import db from '../models/db.js';

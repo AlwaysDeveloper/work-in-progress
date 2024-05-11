@@ -15,8 +15,17 @@ export default class Repository {
 	 * @param { FindOptions } criteria 
 	 * @returns { Promise<Model|null> } 
 	 */
-	find(criteria) {
+	findOne(criteria) {
 		return this.#model.findOne(criteria);
+	}
+
+	/**
+	 * 
+	 * @param { FindOptions } criteria 
+	 * @returns { Promise<Model|null> } 
+	 */
+	find(criteria) {
+		return this.#model.find(criteria);
 	}
 
 	/**
