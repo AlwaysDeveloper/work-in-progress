@@ -1,0 +1,33 @@
+version: '3'
+services:
+  mysql_db:
+    container_name: menucard_mysql
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: menucard
+      MYSQL_USER: menucard
+      MYSQL_PASSWORD: menucard
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  mysql_db_test:
+    container_name: menucard_mysql_test
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: menucard_test
+      MYSQL_USER: menucard_test
+      MYSQL_PASSWORD: menucard_test
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data_test:/var/lib/mysql
+
+volumes:
+  mysql_data:
+  mysql_data_test:

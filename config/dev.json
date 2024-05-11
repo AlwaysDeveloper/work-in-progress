@@ -1,12 +1,12 @@
 {
     "port": 3000,
-    "postgres": {
-        "username": "POSTFRES_USERNAME",
-        "password": "POSTFRES_PASSWORD",
-        "database": "POSTFRES_DATABASE",
+    "mysql": {
+        "username": "menucard",
+        "password": "menucard",
+        "database": "menucard",
         "host": "127.0.0.1",
-        "port": 5432,
-        "dialect": "postgres"
+        "port": 3306,
+        "dialect": "mysql"
     },
     "jwt": {
         "secret": "JWT_SECRECT",

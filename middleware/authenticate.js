@@ -9,13 +9,17 @@ function extractToken(token) {
 }
 
 async function AuthenticateToken(req, res, next) {
-	const token = extractToken(req.headers.authorization);
-	JWTVerify(token)
-		.then((decoded) => {
-			req.user = decoded;
-			next();
-		})
-		.catch(error => next(error));
+	try {
+		const token = extractToken(req.headers.authorization);
+		JWTVerify(token)
+			.then((decoded) => {
+				req.user = decoded;
+				next();
+			})
+			.catch(error => next(error));
+	} catch (error) {
+		next(error);
+	}
 }
 
 export default AuthenticateToken;

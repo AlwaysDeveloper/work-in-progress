@@ -6,7 +6,7 @@ const path = require("path");
 const Sequelize = require("sequelize");
 const process = require("process");
 const basename = path.basename(__filename);
-const config = APP_CONFIG.postgres;
+const config = APP_CONFIG.mysql;
 const db = {};
 
 let sequelize;

@@ -1,11 +1,11 @@
 {
   "dev": {
-    "username": "whatsapp_clone",
-    "password": "whatsapp_clone",
-    "database": "whatsapp_clone",
+    "username": "menucard",
+    "password": "menucard",
+    "database": "menucard",
     "host": "127.0.0.1",
-    "port": 5432,
-    "dialect": "postgres"
+    "port": 3306,
+    "dialect": "mysql"
   },
   "test": {
     "username": "whatsapp_clone_test",
