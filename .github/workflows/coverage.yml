@@ -59,8 +59,5 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           file: ./coverage/lcov.info  # Path to your coverage file
-          token: ${{ secrets.CODECOV_TOKEN }}  # Add your Codecov token as a secret
-        env: 
-          CODECOV_TOKEN: ${{secrets.7c71cac0-b184-4eef-8a19-8da39645f847}}
-
-
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
