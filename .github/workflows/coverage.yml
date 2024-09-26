@@ -55,3 +55,10 @@ jobs:
       #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       #     AWS_REGION: 'your-aws-region' # Example: 'us-west-2'
 
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage/lcov.info  # Path to your coverage file
+          token: ${{ secrets.7c71cac0-b184-4eef-8a19-8da39645f847 }}  # Add your Codecov token as a secret
+
+
